@@ -34,12 +34,12 @@ public class Main extends ListenerAdapter {
             event.getChannel().sendMessage("Pong!").queue();
         }
 
-        if(event.getMessage().getContentRaw().equalsIgnoreCase("paul is")) {
-            event.getChannel().sendMessage("Awesome!").queue();
+        if(event.getMessage().getContentRaw().contains("paul")) {
+            event.getChannel().sendMessage("You are correct, Paul IS Awesome!").queue();
         }
 
         if(event.getMessage().getContentRaw().equals("!gitinfo")) {
-            event.getChannel().sendMessage("https://github.com/Setak/ProjectOasis.git").queue();
+            event.getChannel().sendMessage("https://github.com/Setak/ProjectUniverse.git").queue();
         }
     }
 }
